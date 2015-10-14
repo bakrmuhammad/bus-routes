@@ -1,0 +1,20 @@
+{
+  "COPY": {
+    "key": "value",
+    "sig": "Sig goes here",
+    "label": "Label goes here",
+    "headline": "Miami Herald interactive template",
+    "reporter_name": "Chris Alcantara",
+    "email": "calcantara",
+    "date": "Aug. 3, 2015",
+    "readout": "Read in goes here",
+    "sources": "Sources go here",
+    "seo_description": "",
+    "key_words": "",
+    "fb_img_url": "",
+    "url": "",
+    "fbShareLink": "",
+    "twShareLink": "",
+    "gpShareLink": ""
+  }
+}

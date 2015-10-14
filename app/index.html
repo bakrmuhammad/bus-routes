@@ -1,0 +1,139 @@
+<!---
+  _______ _____  ________  _      _____   ____  __ _________  ____
+ / ___/ // / _ \/  _/ __/ | | /| / / _ | / __/ / // / __/ _ \/ __/
+/ /__/ _  / , __/ /_\ \   | |/ |/ / __ |_\ \  / _  / _// , _/ _/  
+\___/_//_/_/|_/___/___/   |__/|__/_/ |_/___/ /_//_/___/_/|_/___/  
+                                                                                                                            
+Greetings. I'm @ChrisAlcantara. I code for the @MiamiHerald.
+ -->
+<!DOCTYPE html>
+<html>
+  <head>
+  
+    <!-- META TAGS -->
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="description" content="">
+<meta name="author" content="Chris Alcantara">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<meta name="keywords" content="">
+<meta name="copyright" content="&copy; 2015 Miami Herald">
+<meta name="robots" content="index,follow">
+<meta property="og:title" content="Graphic: Miami Herald interactive template"/>
+<meta property="og:type" content="article"/> 
+<meta property="og:description" content=""/>
+<meta property="og:image" content=""/>
+<meta property="og:url" content=""/>
+<meta property="og:site_name " content="Miami Herald"/> 
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@MiamiHerald">
+<meta name="twitter:creator" content="@MiamiHerald">
+<meta name="twitter:title" content="Graphic: Miami Herald interactive template">
+<meta name="twitter:description" content="">
+<meta name="twitter:image" content="">
+
+<link rel="icon" type="image/jpg" href="http://www.miamiherald.com/static/theme/miamiherald/base/ico/favicon.png"/>
+<link rel="image_src" href="" />
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="css/libs/bootstrap.css">
+<link rel="stylesheet" href="css/styles.css">
+<link rel="stylesheet" href="js/libs/leaflet/leaflet.css" />
+    
+    <title>Miami Herald interactive template | Miami Herald</title>
+
+  </head>
+  <body>
+      
+      <!-- NAVBAR -->
+      <nav class="navbar navbar-default navbar-fixed-top" role="navigation"><div class="navbar-header"><a class="navbar-brand-img large-img" href="http://miamiherald.com"><img src="http://pubsys.miamiherald.com/static/media/projects/libraries/images/logo_b.png" class="logo"></a> <a class="navbar-brand-img mobile-img" href="http://miamiherald.com"><img src="http://pubsys.miamiherald.com/static/media/projects/libraries/images/h_b.png" class="logo"></a> <a class="navbar-brand sig">Sig goes here</a></div><div class="collapse navbar-collapse"><ul class="nav navbar-nav navbar-right"><li><a href=""><i class="fa fa-facebook"></i></a></li><li><a href=""><i class="fa fa-twitter"></i></a></li><li><a href=""><i class="fa fa-google-plus"></i></a></li></ul></div></nav>
+
+      
+      <!-- CONTENT -->
+      <div class="container">
+        
+	<!-- HEADLINE AND BYLINE -->
+	<span class="graphic-label">Label goes here</span>
+	<div class="headline">Miami Herald interactive template</div>
+	<div class="byline">
+		<span class="name">By <span class="upper">Chris Alcantara</span></span>
+		<a href="mailto:calcantara"><span class="email">calcantara@MiamiHerald.com</span></a>
+		<span class="date">Published: Aug. 3, 2015</span>
+	</div>
+
+	<!-- READOUT -->
+	<div class="readout">
+		<p>Read in goes here</p>		
+	</div>
+
+	<div class="readout">
+		<h3 class='subhed'>What's wrong with the busiest bus routes in Miami-Dade</h3>
+		<p>34 bus routes account for 75% of ride in Miami-Dade Transit. The also have 62% of all complaints.</p>
+
+		<h6 class="instructions">Click on the categories in order to see the most complained about bus routes in each category.</h6>
+	</div>
+
+	<button id = "1">Bus Stop Issues</button>
+	<button id = "2">Capacity</button>
+	<button id = "3">Cleanlieness</button>
+	<button id = "4">No Stop</button>
+	<button id = "5">Driver Conduct</button>
+	<button id = "6">Fares</button>
+	<button id = "7">Maintenance</button>
+	<button id = "8">Passenger Conduct</button>
+	<button id = "9">Misc.</button>
+	<button id = "10">Praise</button>
+	<button id = "11">Schedule</button>
+	<button id = "12">Safety</button>
+	<button id = "reset">Reset</button>
+	<!--MAP-->
+	<div id = "map-container">
+	 <div id="map" style="height: 500px"></div>
+	</div>
+
+	<div id="hover-box">
+		<span id="r-n" class="rob heavier"></span>
+		<br />
+		<div id="sf-t" class="rob">
+			<span class="float-left">Total Complaints: </span><span class="float-right" id="complaints"></span>
+			<div class="clearfix"></div>
+			<span class="float-left">Ridership: </span><span class="float-right" id="boardings"></span>
+			<div class="clearfix"></div>
+			<span class="float-left" id = "another"></span><span class="float-right" id="catX"></span>
+			<div class="clearfix"></div>
+		</div>
+		
+	</div>
+
+
+	<div id="sources">
+		<p>Sources: Sources go here</p>
+	</div>
+
+
+        <h3 class="comments">Comments</h3>
+<div id="fb-root"></div><div class="fb-comments" data-href="" data-numposts="10" data-width="100%" data-colorscheme="light"></div>
+
+      </div>
+      
+      <!-- LIBRARIES -->
+      <script src="js/libs/d3/d3.min.js"></script>
+<script src="js/libs/jquery/jquery.min.js"></script>
+<script src="js/libs/jquery/jquery.number.min.js"></script>
+<script src="js/libs/modernizr/modernizr.js"></script>
+<script src="js/libs/bootstrap/bootstrap.min.js"></script>
+<script src="js/libs/sinclair.js"></script>
+<script src="js/libs/leaflet/leaflet.js"></script>
+<script src="js/libs/leaflet/tile.stamen.js"></script>
+<script src="js/libs/numeral/numeral.js"></script>
+<script src="js/busroutes.json"></script> <!--holds geojson/bus routes ne touche pas, change it in geojson.io-->
+<script src="js/function.js"></script>
+<script src="js/main.js"></script>
+
+
+
+      <!-- ANALYTICS -->
+      <div id="mistatstag" style="display:none"><script type="text/javascript" src="http://media.miamiherald.com/misites/mia/miamiherald.js"></script><script type="text/javascript" src="http://media.miamiherald.com/mistats/products/pubsys_s_code.js"></script><script type="text/javascript">mistats.pagename="Static: Miami Herald interactive template",mistats.pagelevel="Static",mistats.channel="Static: News",mistats.contentsource=mistats.sitename+": Static: Miami Herald",mistats.taxonomy="News|National|GovtPolitics|Elections|";</script><script type="text/javascript" src="http://media.miamiherald.com/mistats/products/pubsys.js"></script><script type="text/javascript" src="http://media.miamiherald.com/mistats/finalizestats.js"></script></div>
+
+  </body>
+</html>

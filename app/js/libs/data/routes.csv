@@ -1,0 +1,94 @@
+routename,description,complaints,boardings,busStopIssue,capacity,cleanliness,noStop,driverConduct,fares,maintenance,passengerConduct,misc,praise,schedule,safety
+1,South Miami to Perrine,97,315771,24,1,1,10,6,0,0,0,6,1,45,3
+2,Downtown Miami to Northeast 163rd Street,334,1428217,21,10,4,42,57,1,1,3,24,12,151,8
+3,Aventura Mall to Downtown Miami,706,4458110,31,11,16,128,157,6,12,4,56,40,206,39
+6,Coconut Grove to Northwest 30th Street,201,388330,12,1,2,14,15,0,0,1,11,9,132,4
+7,Downtown Miami to Dolphin Mall,664,2245675,41,12,10,64,59,5,4,0,22,18,404,25
+8,Downtown Miami to Westchester,648,3690375,27,7,11,110,102,5,6,0,39,29,273,39
+9,Aventura to Downtown Miami,575,3116612,38,7,6,94,118,7,5,2,35,23,195,45
+10,Skylake to Omni Bus Terminal,150,1430350,7,0,3,33,25,0,2,1,3,4,53,19
+11,Florida International University to Downtown Miami,536,6364710,46,5,23,84,117,4,12,4,51,24,137,29
+12,Northside to Mercy Hospital,596,1526402,26,5,13,93,79,5,11,2,30,17,294,21
+16,Northeast 163rd Street to Omni Bus Terminal,213,1492301,13,1,3,38,63,2,1,0,15,8,57,12
+17,Norwood to Vizcaya,709,2398704,35,4,7,77,78,2,7,1,37,54,384,23
+19,Northeast 163rd Street to Miami-Dade College North,132,870482,5,5,2,21,24,0,1,0,7,3,56,8
+22,Northeast 163rd Street to Coconut Grove,632,2430326,30,3,11,71,110,6,5,0,41,43,292,20
+24,West Dade to Brickell ,501,1297536,37,37,13,112,68,3,0,0,32,19,159,21
+27,Coconut Grove to Calder,1039,4695342,69,2,14,155,224,9,21,2,79,28,384,52
+29,Hialeah Triangle to Miami Lakes,128,340174,11,5,0,25,24,0,0,0,7,6,42,8
+31,Cutler Bay to Dadeland South,123,1031574,7,2,2,23,29,0,2,1,10,9,33,5
+32,Miami Gardens to Omni Bus Terminal,619,1502134,31,5,13,51,66,3,4,0,45,12,375,14
+33,Hialeah Gardens to Biscayne Boulevard,393,1004741,22,5,3,43,31,0,0,1,12,12,255,9
+34,Busway Flyer: Florida City to Dadeland South,201,742289,4,30,2,29,42,1,12,1,28,10,33,9
+35,Miami-Dade College Kendall to Florida City ,517,1338594,51,5,11,72,54,0,1,0,21,7,271,24
+36,Dolphin Mall to Miami Springs,559,1431577,19,9,3,42,41,0,2,0,34,13,378,18
+37,Hialeah to South Miami,525,2156774,36,9,4,42,56,0,6,1,21,31,298,21
+38,Busway Max: Florida City to Dadeland South,604,4164132,67,24,21,76,156,8,5,6,55,26,125,35
+40,Bird Road to Douglas Road,384,1132136,24,2,7,27,60,2,7,1,30,13,201,10
+42,Douglas Road to Miami Springs,347,820624,25,2,2,25,23,0,2,1,16,15,221,15
+46,Liberty City Connection,31,31078,2,4,0,1,0,0,0,0,6,0,18,0
+48,Brickell to University Station,104,113273,1,2,0,11,10,1,0,0,8,3,62,6
+51,Flagler Max: West Dade to Downtown Miami,317,1491349,8,2,4,37,48,1,6,0,25,13,144,29
+52,Goulds to Dadeland South,263,876992,34,6,13,22,37,0,2,1,14,4,108,22
+54,Hialeah Gardens to Biscayne Boulevard,582,1928720,46,8,9,38,52,3,3,2,24,28,360,9
+56,Miami Children's Hospital to Southwest 162nd Avenue,233,299105,12,5,10,24,17,2,0,0,18,11,125,9
+57,Miami International Airport to Southwest 152nd Street,179,235299,18,3,0,11,6,1,2,0,13,1,118,6
+62,Miami Children's Hospital to Southwest 162nd Avenue,255,1590459,10,1,4,24,50,1,7,0,16,15,121,6
+70,Cutler Bay to Florida City,240,764028,38,7,10,36,23,0,1,0,14,3,94,14
+71,Dolphin Mall to Miami-Dade College Kendall,328,536848,13,15,7,37,17,0,0,0,7,9,209,14
+72,South Miami to Bent Tree,405,526311,18,1,14,30,55,0,0,0,19,20,226,22
+73,Northwest Dade to Dadeland South,407,1240344,43,4,9,52,44,1,2,0,27,27,182,16
+75,Miami Lakes to Florida International University Biscayne Bay Campus,339,867313,26,2,6,59,55,3,1,4,23,7,129,24
+77,Norwood to Downtown Miami,691,4920131,25,7,11,118,180,6,13,1,65,34,169,62
+79,79th Street Max: Miami Beach to Northside,58,236747,2,2,0,10,7,0,0,0,4,2,27,4
+87,Palmetto to Dadeland,366,959246,24,3,3,47,25,1,3,0,13,27,207,13
+88,Southwest 162nd Ave to Dadeland North,365,1430823,19,8,10,48,25,4,12,1,23,13,193,9
+93,Biscayne Max: Downtown Miami to Aventura,589,1671794,9,12,6,97,96,1,10,1,38,38,242,39
+95,Interstate 95 Golden Glades Express/Dade-Broward Express,432,913182,18,9,16,57,35,2,8,1,41,49,169,27
+99,Northwest Dade to Aventura Mall,421,1027828,27,11,9,34,41,0,6,0,34,6,239,14
+101,Ventian Causeway,102,124364,2,7,1,9,11,0,0,0,4,0,66,2
+102,Brickell Station to Key Biscayne,383,961572,4,12,2,46,39,1,3,0,33,11,222,10
+103,Mount Sinai Hospital to Downtown Miami,206,2036898,8,6,7,47,51,6,3,0,12,26,24,16
+104,The Hammocks to Miami-Dade College,189,648605,13,5,9,28,23,0,1,0,13,4,73,20
+105,Golden Glades to Aventura,287,863942,12,5,3,50,37,0,2,1,9,10,142,16
+107,Bunche Park to Bal Harbour,402,1010297,23,4,5,43,33,1,5,1,20,10,234,23
+108,North Miami Beach to Collins Avenue,268,1067935,13,8,4,53,41,0,3,1,15,5,109,16
+110,Miami Beach to Miami International Airport,346,1688798,14,11,3,56,49,0,0,0,21,4,166,22
+112,Hialeah to Lincoln Road,829,5544515,21,51,16,173,163,6,9,5,74,33,204,74
+113,Civic Center to Miami Beach,180,493510,8,1,0,33,20,0,1,0,8,10,87,12
+115,Mid-North Beach Connection,281,227583,23,5,1,37,17,0,3,0,19,10,155,11
+119,Aventura to Downtown Miami,869,7080373,42,25,17,163,207,23,12,3,81,41,187,68
+120,Beach Max: Downtown Miami to Aventura Mall,684,4287601,13,35,16,136,155,10,12,1,52,29,159,66
+123,South Beach Local,177,1802489,9,1,1,28,50,0,4,0,16,18,34,16
+132,Hialeah Tri-Rail to Doral,63,18007,1,0,1,24,2,0,0,0,3,1,30,1
+133,No description,62,258173,0,2,0,2,7,0,0,0,4,3,44,0
+135,135th St Crosstown,326,799396,10,4,2,38,28,0,3,0,15,2,214,10
+136,Douglas Road to Old Cutler,150,137205,4,6,1,2,2,0,0,0,5,2,125,3
+137,West Dade Connection,549,1147814,35,13,14,54,32,0,4,0,25,10,345,17
+150,Miami Beach Airport Flyer,159,941123,5,3,7,37,21,2,3,0,16,16,45,4
+183,Northwest 87th Avenue to Adventura Mall,374,2102464,17,6,7,49,48,11,5,1,14,17,182,17
+195,No description,300,484096,1,5,2,24,41,2,13,0,30,27,140,15
+200,Cutler Bay Local,63,36032,6,2,0,12,7,0,0,1,3,2,29,1
+202,Little Haiti Connection,63,104295,1,3,0,20,1,0,1,0,1,3,33,0
+204,Killian KAT,159,541120,6,5,16,16,19,1,11,0,24,5,45,11
+207,Little Havana Connection,149,944725,0,0,1,24,40,1,1,0,20,20,29,13
+211,Overtown Circulator,30,58831,5,0,1,1,6,0,0,1,2,2,11,1
+212,Sweetwater Circulator,3,44473,0,1,0,0,0,0,0,0,0,0,2,0
+238,East-West Connection,209,226028,9,3,0,31,16,0,0,0,6,9,133,2
+243,No description,14,10048,0,0,0,0,0,0,0,0,4,0,10,0
+246,Night Owl,45,53321,2,0,0,2,7,0,0,0,2,0,29,3
+249,Coconut Grove Circulator,181,657958,6,2,4,19,21,0,6,0,24,5,86,8
+252,Coral Reef Max,209,535821,14,3,13,29,19,1,1,0,15,7,103,4
+254,Brownsville Circulator,25,15375,3,0,0,5,1,0,1,0,1,3,10,1
+267,Ludlam Limited,68,62047,3,1,0,5,2,0,0,0,3,5,46,3
+272,Sunset Kat,87,270561,1,2,2,5,3,1,2,0,9,10,49,3
+277,Seventh Avenue Max,65,389871,3,1,0,9,15,0,1,0,4,7,17,8
+286,North Pointe Circulator,24,60408,0,0,0,4,2,1,0,0,2,1,14,0
+287,Saga Bay Max,81,179038,7,5,2,14,6,1,0,0,3,5,35,3
+288,Kendall Cruiser,86,378314,5,1,0,12,15,1,3,0,7,2,22,18
+297,27th Avenue Orange Max,220,789387,7,1,2,38,31,2,1,0,13,13,89,23
+301,Dade-Monroe Express,65,547441,2,5,0,18,5,1,0,1,16,0,16,1
+302,Card Sound Express,5,48589,0,0,0,0,0,0,0,0,2,0,0,3
+338,Weekend Express,2,37302,0,0,0,1,0,0,0,0,0,0,1,0
+344,Miami-Dade College Homestead to Florida City,89,60956,5,7,1,11,11,1,1,0,7,3,40,2
+500,Midnight Owl,25,43866,0,0,1,1,11,0,0,0,3,0,9,0

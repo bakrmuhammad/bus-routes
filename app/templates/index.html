@@ -1,0 +1,29 @@
+{% extends "templates/base.html" %}
+
+{% block content %}
+	<!-- HEADLINE AND BYLINE -->
+	<span class="graphic-label">{{ COPY.label }}</span>
+	<div class="headline">{{ COPY.headline }}</div>
+	<div class="byline">
+		<span class="name">By <span class="upper">{{ COPY.reporter_name }}</span></span>
+		<a href="mailto:{{ COPY.email }}"><span class="email">{{ COPY.email }}@MiamiHerald.com</span></a>
+		<span class="date">Published: {{ COPY.date }}</span>
+	</div>
+
+	<!-- READOUT -->
+	<div class="readout">
+		<p>{{ COPY.readout }}</p>		
+	</div>
+
+	<div class="readout">
+		<h3 class='subhed'>This is the subhed</h3>
+		<p>Hello. This is additional readout information</p>
+
+		<h6 class="instructions">This is some instruction text to tell reader how to use an app or interactive graphic.</h6>
+	</div>
+
+	<div id="sources">
+		<p>Sources: {{ COPY.sources }}</p>
+	</div>
+
+{% endblock %}
