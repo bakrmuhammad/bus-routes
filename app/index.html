@@ -73,39 +73,91 @@ Greetings. I'm @ChrisAlcantara. I code for the @MiamiHerald.
 		<h6 class="instructions">Click on the categories in order to see the most complained about bus routes in each category.</h6>
 	</div>
 
-	<button id = "1">Bus Stop Issues</button>
-	<button id = "2">Capacity</button>
-	<button id = "3">Cleanlieness</button>
-	<button id = "4">No Stop</button>
-	<button id = "5">Driver Conduct</button>
-	<button id = "6">Fares</button>
-	<button id = "7">Maintenance</button>
-	<button id = "8">Passenger Conduct</button>
-	<button id = "9">Misc.</button>
-	<button id = "10">Praise</button>
-	<button id = "11">Schedule</button>
-	<button id = "12">Safety</button>
-	<button id = "reset">Reset</button>
-	<!--MAP-->
-	<div id = "map-container">
-	 <div id="map" style="height: 500px"></div>
+<div class = "col-md-4">
+	<div>
+		<button id = "1">Bus Stop Issues</button>
+		<p>Explanation here</p>
 	</div>
+	<div>
+		<button id = "2">Capacity</button>
+	</div>
+	<div>
+		<button id = "3">Cleanliness</button>
+	</div>
+	<div>
+		<button id = "4">No Stop</button>
+	</div>
+	<div>
+		<button id = "5">Driver Conduct</button>
+	</div>
+	<div>
+		<button id = "6">Fares</button>
+	</div>
+	<div>
+		<button id = "7">Maintenance</button>
+	</div>
+	<div>
+		<button id = "8">Passenger Conduct</button>
+	</div>
+	<div>
+		<button id = "9">Misc.</button>
+	</div>
+	<div>
+		<button id = "10">Praise</button>
+	</div>
+	<div>
+		<button id = "11">Schedule</button>
+	</div>
+	<div>
+		<button id = "12">Safety</button>
+	</div>
+	<div>
+		<button id = "reset">Reset</button>
+	</div>
+</div>
+
+<div class = "map-area col-md-8">	
+	<!--MAP-->
+			<div id="legend">
+                <div class="map-interface">
+                    <div class="complaint-explainer">
+                        <p>
+                            <span class="complaint-type">Explanation goes here.</span>
+                            <span class="complaint-explainer"></span>
+                            <span class='year'> from 2014-2015 (??).</span>
+                        </p>
+                    </div>
+                    <div class="key-holder">
+                        <div class="key"></div>
+
+                        <div class="clearfix"></div>
+
+                        <div class="labels">
+                            <h6 class="label label-left">fewer complaints</h6>
+                            <h6 class="label b-grade"></h6>
+                            <h6 class="label label-middle"></h6>
+                            <h6 class="label d-grade"></h6>
+                            <h6 class="label label-right">more complaints</h6>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+    <div id = "map-container">
+		<div id="map"></div>
+	</div>
+	
+</div>
 
 	<div id="hover-box">
 		<span id="r-n" class="rob heavier"></span>
-		<br />
 		<div id="sf-t" class="rob">
-			<span class="float-left">Total Complaints: </span><span class="float-right" id="complaints"></span>
-			<div class="clearfix"></div>
-			<span class="float-left">Ridership: </span><span class="float-right" id="boardings"></span>
-			<div class="clearfix"></div>
-			<span class="float-left" id = "another"></span><span class="float-right" id="catX"></span>
-			<div class="clearfix"></div>
+			<span>This route carried</span>
+			<span id= 'boardings'></span><span> people and recieved</span>
+			<span id="complaints"></span><span> complaints per 100,000 rider.</span>
+			<div id= "sentence"></div>
 		</div>
-		
 	</div>
-
-
 	<div id="sources">
 		<p>Sources: Sources go here</p>
 	</div>
@@ -117,7 +169,7 @@ Greetings. I'm @ChrisAlcantara. I code for the @MiamiHerald.
       </div>
       
       <!-- LIBRARIES -->
-      <script src="js/libs/d3/d3.min.js"></script>
+<script src="js/libs/d3/d3.min.js"></script>
 <script src="js/libs/jquery/jquery.min.js"></script>
 <script src="js/libs/jquery/jquery.number.min.js"></script>
 <script src="js/libs/modernizr/modernizr.js"></script>
@@ -127,7 +179,7 @@ Greetings. I'm @ChrisAlcantara. I code for the @MiamiHerald.
 <script src="js/libs/leaflet/tile.stamen.js"></script>
 <script src="js/libs/numeral/numeral.js"></script>
 <script src="js/busroutes.json"></script> <!--holds geojson/bus routes ne touche pas, change it in geojson.io-->
-<script src="js/function.js"></script>
+<!--script src="js/function.js"></script-->
 <script src="js/main.js"></script>
 
 
