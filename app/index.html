@@ -73,58 +73,120 @@ Greetings. I'm @ChrisAlcantara. I code for the @MiamiHerald.
 		<h6 class="instructions">Click on the categories in order to see the most complained about bus routes in each category.</h6>
 	</div>
 
-<div class = "col-md-4">
-	<div>
-		<button id = "1">Bus Stop Issues</button>
-		<p>Explanation here</p>
+<div class = "col-md-5">
+	<div class = "bars">
+	<div class="bar-container">
+		<div class='bar'>
+			<label class='bar-name'>Schedule</label>
+			<label>Issues with busses not arriving on time. </label>
+			<div class="bar-inner" style="width: 100%"></div>
+			<label>6395</label>
+		</div>
 	</div>
-	<div>
-		<button id = "2">Capacity</button>
+	<div class="bar-container">
+		<div class='bar'>
+			<label class='bar-name'>Driver Complaints</label>
+			<label>Drivers accused of not acting professionally, from unauthorized stops to being rude. </label>
+			<div class="bar-inner" style="width: 43.49%"></div>
+			<label>2781</label>
+		</div>
 	</div>
-	<div>
-		<button id = "3">Cleanliness</button>
+	<div class="bar-container">
+		<div class='bar'>
+			<label class='bar-name'>No Stop</label>
+			<label>Claims that drivers didn't pick up waiting passengers or respond to a request for a stop.</label>
+			<div class="bar-inner" style="width: 35.90%"></div>
+			<label>2296</label>
+		</div>
 	</div>
-	<div>
-		<button id = "4">No Stop</button>
+	<div class="bar-container">
+		<div class='bar'>
+			<label class='bar-name'>Safety</label>
+			<label>Actions that allegedly put passengers or motorists in danger. </label>
+			<div class="bar-inner" style="width: 17.12%"></div>
+			<label>1095</label>
+		</div>
 	</div>
-	<div>
-		<button id = "5">Driver Conduct</button>
+	<div class="bar-container">
+		<div class='bar'>
+			<label class='bar-name'>Miscellaneous</label>
+			<label>Complaints that don't fit into categories</label>
+			<div class="bar-inner" style="width: 16.81%"></div>
+			<label>1075</label>
+		</div>
 	</div>
-	<div>
-		<button id = "6">Fares</button>
+	<div class="bar-container">
+		<div class='bar'>
+			<label class='bar-name'>Bus Stop Issues</label>
+			<label></label>
+			<label class = 'description'>Problems or requests invovling bus stops, including bench damage, faulty signs and the need for a new bus stop altogther in an unserved location.</label>
+			<div class="bar-inner" style="width: 13.12%"></div>
+			<label>839</label>
+		</div>
 	</div>
-	<div>
-		<button id = "7">Maintenance</button>
+	<div class="bar-container">
+		<div class='bar'>
+			<label class='bar-name'>Praise</label>
+			<label>Pasengers don't just gripe. Drivers get credit for being remarkably kind, hard-working, quick-thinking, and concientous. </label>
+			<div class="bar-inner" style="width: 11.54%"></div>
+			<label>738</label>
+		</div>
 	</div>
-	<div>
-		<button id = "8">Passenger Conduct</button>
+	<div class="bar-container">
+		<div class='bar'>
+			<label class='bar-name'>Cleanliness</label>
+			<label class = 'description'>Complaints revolving around crowded busses, and routes that riders see as needing more frequent stops. </label>
+			<div class="bar-inner" style="width: 4.63%"></div>
+			<label>296</label>
+		</div>
 	</div>
-	<div>
-		<button id = "9">Misc.</button>
+	<div class="bar-container">
+		<div class='bar'>
+			<label class='bar-name'>Capacity</label>
+			<label>Complaints revolving around crowded busses, and routes that riders see as needing more frequent stops. </label>
+			<div class="bar-inner" style="width: 4.57%"></div>
+			<label>292</label>
+		</div>
 	</div>
-	<div>
-		<button id = "10">Praise</button>
+	<div class="bar-container">
+		<div class='bar'>
+			<label class='bar-name'>Maintenance</label>
+			<label>Mechanical problems and other equipment woes.</label>
+			<div class="bar-inner" style="width: 3.16%"></div>
+			<label>202</label>
+		</div>
 	</div>
-	<div>
-		<button id = "11">Schedule</button>
+	<div class="bar-container">
+		<div class='bar'>
+			<label class='bar-name'>Fares</label>
+			<label>Issues with paying for a bus ride. </label>
+			<div class="bar-inner" style="width: 2.13%"></div>
+			<label>136</label>
+		</div>
 	</div>
-	<div>
-		<button id = "12">Safety</button>
+	<div class="bar-container">
+		<div class='bar'>
+			<label class='bar-name'>Passenger Conduct</label>
+			<label>When passengers misbehave, other passengers complain.</label>
+			<div class="bar-inner" style="width: 0.94%"></div>
+			<label>60</label>
+		</div>
 	</div>
-	<div>
-		<button id = "reset">Reset</button>
+
+
+
 	</div>
 </div>
 
-<div class = "map-area col-md-8">	
+<div class = "map-area col-md-7">	
 	<!--MAP-->
-			<div id="legend">
+	<div id="legend">
                 <div class="map-interface">
                     <div class="complaint-explainer">
                         <p>
-                            <span class="complaint-type">Explanation goes here.</span>
+                            <span class="complaint-type">The ratio of complaints per 100,000 riders</span>
                             <span class="complaint-explainer"></span>
-                            <span class='year'> from 2014-2015 (??).</span>
+                            <span class='year'> from 2014.</span>
                         </p>
                     </div>
                     <div class="key-holder">
@@ -142,26 +204,42 @@ Greetings. I'm @ChrisAlcantara. I code for the @MiamiHerald.
                     </div>
                     <div class="clearfix"></div>
                 </div>
-            </div>
-    <div id = "map-container">
+    </div>
+    <div id = "slideMenu">
+		<div class ="selector">Menu</div>
+		<div id = "buttons">
+			<button id = "reset">Total complaints</button>
+			<button id = "1">Bus Stop Issues</button>
+			<button id = "2">Capacity</button>
+			<button id = "3">Cleanliness</button>
+			<button id = "4">No Stop</button>
+			<button id = "5">Driver Conduct</button>
+			<button id = "6">Fare</button>
+			<button id = "7">Maintenance</button>
+			<button id = "8">Passenger Conduct</button>
+			<button id = "9">Miscellaneous</button>
+			<button id = "10">Praise</button>
+			<button id = "11">Schedule</button>
+			<button id = "12">Safety</button>
+		</div>
+	</div>
+	<div id = "map-container">
 		<div id="map"></div>
 	</div>
-	
 </div>
 
 	<div id="hover-box">
 		<span id="r-n" class="rob heavier"></span>
 		<div id="sf-t" class="rob">
-			<span>This route carried</span>
-			<span id= 'boardings'></span><span> people and recieved</span>
-			<span id="complaints"></span><span> complaints per 100,000 rider.</span>
+			<span>This route had</span>
+			<span id= 'boardings'></span><span> rides and recieved</span>
+			<span id="complaints"></span><span> complaints per 100,000 rides.</span>
 			<div id= "sentence"></div>
 		</div>
 	</div>
 	<div id="sources">
 		<p>Sources: Sources go here</p>
 	</div>
-
 
         <h3 class="comments">Comments</h3>
 <div id="fb-root"></div><div class="fb-comments" data-href="" data-numposts="10" data-width="100%" data-colorscheme="light"></div>
@@ -180,6 +258,7 @@ Greetings. I'm @ChrisAlcantara. I code for the @MiamiHerald.
 <script src="js/libs/numeral/numeral.js"></script>
 <script src="js/busroutes.json"></script> <!--holds geojson/bus routes ne touche pas, change it in geojson.io-->
 <!--script src="js/function.js"></script-->
+<script src="js/libs/jquery/jquery-ui.min.js"></script>
 <script src="js/main.js"></script>
 
 
