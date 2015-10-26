@@ -496,4 +496,7 @@ label {
   text-decoration:none;
   text-align: center;
 }
+  .bars{
+    height: auto;
+  }
 }
