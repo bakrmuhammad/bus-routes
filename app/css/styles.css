@@ -387,7 +387,7 @@ display: none;}
 
 .bar {
   padding: 0px;
-  margin-bottom: 0.5em;
+  margin-bottom: 0.2em;
 }
 
 .bar-inner {
@@ -406,7 +406,7 @@ label {
   width: 200px;
   text-align: left;
   font-weight: normal;
-  vertical-align: -4px;
+  font-size: 15px;
 }
 
 @media (max-width: 767px) {
