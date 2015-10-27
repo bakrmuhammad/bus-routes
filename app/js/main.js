@@ -12,12 +12,23 @@ function getPos(event) {
     var posY = event.pageY;
     var x = 0;
     var y = 0;
+    var height = $('#hover-box').height();
+    var mobile = 736
         posX < w ? x = posX : x = posX - ($('#hover-box').outerWidth(true) / 2)
         posY > (h*0.3) ? y = (posY - $('#hover-box').outerHeight(true) - 40) : y = posY = 20
+    
+    //if elsefixes box blocking cursor issue
+    if (height < 100){
         $('#hover-box').css({
             'left': x + 50,
             'top': y + 170
         });
+    } else {
+        $('#hover-box').css({
+            'left': x + 50,
+            'top': y + 220
+        });
+    }
 }
 
 function initHover() {
@@ -84,6 +95,7 @@ function $onEachFeature(feature, layer) {
     layer.on({
         click: function(e) {
             var $layer = e.target;
+
             var routename = feature.properties.routename;
             var complaints = feature.properties.comR;
             var boardings = feature.properties.boardings;
@@ -91,16 +103,21 @@ function $onEachFeature(feature, layer) {
                 opacity: 1,
                 weight: 5
             };
+            var defaultstyle = {
+                opacity: 0.8,
+                weight: 3
+            };
 
+            layer.setStyle(defaultstyle);
             $layer.bringToFront();
             $layer.setStyle(highlightStyle);
+
             $('#r-n').html('<h4> Route '+routename+'</h4>');
             $('#complaints').html('<b>'+ratio(complaints)+'</b>');
             $('#boardings').text(numberChange(boardings));
             //add extra things, stroke change?? 
             $('#sentence').html('');            
-            initHover();    
-        
+            initHover();
         }
     }); 
 }
@@ -1344,9 +1361,9 @@ function fixPosition() {
 
 function fixZoom() {
     if (w > mobile) {
-        return 10.33;
+        return 9;
     } else {
-        return 10;
+        return 9;
     }
 }
 
@@ -1568,10 +1585,6 @@ function slide(){
 }
 
 $(document).ready(function(){
-    var mobile = 767;
-    var w = window.innerWidth;
-    if (w<mobile){
         slide();
         selector();
-    } else {}
 });

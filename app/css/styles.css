@@ -256,19 +256,17 @@ hr {
 
 #slideMenu{
   width: 140px;
-  top: 150px;
+  top: 115px;
   right: 30px;
   position: absolute;
   z-index: 2;
   box-shadow: 0px 0px 10px #999;
+  opacity: 0.8;
 }
 
-.selector{
-  display: none;
-}
 #buttons{
   width: 140px;
-  opacity: 0.8;
+  display: none;
 }
 #buttons button{
   width: 140px;
@@ -291,6 +289,17 @@ hr {
   color: #fff;
   outline: 0;
 }
+.selector{
+  width: 100%;
+  z-index: 0;
+  background-color: #fff;
+  padding:5px;
+  color:#000;
+  text-decoration:none;
+  text-align: right;
+  cursor: pointer;
+  display: block;
+}
 
 #legend {
  max-width: 100%;
@@ -304,7 +313,7 @@ hr {
    width: 320px;
    z-index: 9999;
    display: block;
-   padding: 5px 15px;
+   padding: 5px 10px;
    background: #FFF;
    border-top: 1px solid #BBB;
    border-right: 2px solid #BBB;
@@ -316,13 +325,16 @@ hr {
 }
 
 #legend .key-holder {
-  margin: 1em 0;
+  margin: 0.5em 0;
   width: 100%;
 }
 
+.complaint-explainer{
+  font-size: 12px;
+}
 #legend .labels .label {
  font-family: "McClatchy Sans", "Helvetica Nueue", Helvetica, Arial, sans-serif;
- font-size: 10px;
+ font-size: 8px;
  display: inline-block;
  padding: 0px;
  float: left;
@@ -383,10 +395,11 @@ display: none;}
   border-bottom: 1px dashed #ccc;
   margin-bottom: 0em;
   width: 95%;
+  padding: 1em 0;
 }
 
 .bar {
-  padding: 0px;
+  padding: 0.2em;
   margin-bottom: 0.2em;
 }
 
@@ -472,20 +485,7 @@ label {
   display: none;
   opacity: 0.8;
 }
-.selector{
-  width: 100%;
-  z-index: 0;
-  background-color: #fff;
-  padding:5px;
-  border: 1px solid #fff;
-  color:#000;
-  text-decoration:none;
-  text-align: center;
-  cursor: pointer;
-  display: block;
-  border: 1px solid #BBB;
-}
-#buttons button{
+#buttons button, .selector{
   width: 100%;
   z-index: 0;
   display: block;
