@@ -6,34 +6,55 @@ r-n: route name
 */
 
 function getPos(event) {
-    var w = $('.map-area').width()/4;
-    var h = $('.map-area').height()/4;
+    var w = $('#map-container').width()/4;
+    var h = $('#map-container').height()/4;
     var posX = event.pageX;
     var posY = event.pageY;
     var x = 0;
     var y = 0;
+
     var height = $('#hover-box').height();
-    var mobile = 736
+
         posX < w ? x = posX : x = posX - ($('#hover-box').outerWidth(true) / 2)
         posY > (h*0.3) ? y = (posY - $('#hover-box').outerHeight(true) - 40) : y = posY = 20
     
-    //if elsefixes box blocking cursor issue
-    if (height < 100){
-        $('#hover-box').css({
-            'left': x + 50,
-            'top': y + 170
-        });
-    } else {
-        $('#hover-box').css({
-            'left': x + 50,
-            'top': y + 220
-        });
-    }
+        //if elsefixes box blocking cursor issue
+        if (height < 100){
+            $('#hover-box').css({
+                'left': x + 50,
+                'top': y + 170
+            });
+        } else {
+            $('#hover-box').css({
+                'left': x + 50,
+                'top': y + 220
+            });
+        }
 }
 
+function getClick(event){
+    var posX = event.pageX;
+    var posY = event.pageY;
+    var width = $('#hover-box').width();
+    
+    $('#hover-box').css({
+        'position': 'static',
+        'opacity': 1,
+    });
+}
+
+
 function initHover() {
-    $('#hover-box').show();
-    $(document).bind('mousemove', getPos);
+    var m = 1024;
+    var doc = $(window).width();
+
+    if (doc > m){
+        $('#hover-box').show();
+        $(document).bind('mousemove', getPos);
+    } else {
+        $('#hover-box').show();
+        $(document).bind('click', getClick);
+    }
 }
 
 function endHover() {
@@ -107,10 +128,13 @@ function $onEachFeature(feature, layer) {
                 opacity: 0.8,
                 weight: 3
             };
-
-            layer.setStyle(defaultstyle);
-            $layer.bringToFront();
-            $layer.setStyle(highlightStyle);
+            
+            if ($layer){
+                $layer.bringToFront();
+                $layer.setStyle(highlightStyle);
+            } else {
+                layer.setStyle(defaultstyle);
+            }
 
             $('#r-n').html('<h4> Route '+routename+'</h4>');
             $('#complaints').html('<b>'+ratio(complaints)+'</b>');
@@ -1355,7 +1379,7 @@ function fixPosition() {
     if (w >= mobile) {
         return [25.77, -80.22];
     } else {
-        return [25.7, -80.3];
+        return [25.77, -80.28];
     }
 }
 
@@ -1363,7 +1387,7 @@ function fixZoom() {
     if (w > mobile) {
         return 9;
     } else {
-        return 9;
+        return 10;
     }
 }
 
@@ -1384,7 +1408,7 @@ var lon = coordinates[1]
 var map = new L.Map('map-container', {
     center: new L.LatLng(lat, lon),
     zoom: fixZoom(),
-    minZoom: 10,
+    minZoom: 9,
     maxZoom: 16,
     zoomControl: false,
     doubleClickZoom: true,
@@ -1562,6 +1586,7 @@ $('#map-container').mouseleave(function(){
   $('#hover-box').hide();
 });
 
+
 //.___  ___.   ______   .______    __   __       _______ //
 //|   \/   |  /  __  \  |   _  \  |  | |  |     |   ____|//
 //|  \  /  | |  |  |  | |  |_)  | |  | |  |     |  |__   //
@@ -1584,7 +1609,11 @@ function slide(){
 
 }
 
+$('#ex').click(function(){
+    $('#hover-box').hide();
+});
+
 $(document).ready(function(){
-        slide();
-        selector();
+    slide();
+    selector();
 });
