@@ -124,17 +124,9 @@ function $onEachFeature(feature, layer) {
                 opacity: 1,
                 weight: 5
             };
-            var defaultstyle = {
-                opacity: 0.8,
-                weight: 3
-            };
-            
-            if ($layer){
-                $layer.bringToFront();
-                $layer.setStyle(highlightStyle);
-            } else {
-                layer.setStyle(defaultstyle);
-            }
+
+            $layer.bringToFront();
+            $layer.setStyle(highlightStyle);
 
             $('#r-n').html('<h4> Route '+routename+'</h4>');
             $('#complaints').html('<b>'+ratio(complaints)+'</b>');
