@@ -1484,7 +1484,7 @@ var map = new L.Map('map-container', {
     center: new L.LatLng(lat, lon),
     zoom: fixZoom(),
     minZoom: 9,
-    maxZoom: 16,
+    maxZoom: 14,
     zoomControl: false,
     doubleClickZoom: true,
     VML: true,
