@@ -423,7 +423,7 @@ label {
 #hover-box #ex{
   display: none;
 }
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .large-img {
     display: none; }
   .mobile-img {

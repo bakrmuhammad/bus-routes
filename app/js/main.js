@@ -45,7 +45,7 @@ function getClick(event){
 
 
 function initHover() {
-    var m = 1024;
+    var m = 768;
     var doc = $(window).width();
 
     if (doc > m){
@@ -120,13 +120,6 @@ function $onEachFeature(feature, layer) {
             var routename = feature.properties.routename;
             var complaints = feature.properties.comR;
             var boardings = feature.properties.boardings;
-            var highlightStyle = {
-                opacity: 1,
-                weight: 5
-            };
-
-            $layer.bringToFront();
-            $layer.setStyle(highlightStyle);
 
             $('#r-n').html('<h4> Route '+routename+'</h4>');
             $('#complaints').html('<b>'+ratio(complaints)+'</b>');
@@ -179,13 +172,7 @@ function $onEachFeaturebsi(feature, layer) {
             var complaints = feature.properties.comR;
             var boardings = feature.properties.boardings;
             var $bsi = feature.properties.bsiR;
-            var highlightStyle = {
-                opacity: 1,
-                weight: 5
-            };
 
-            $layer.bringToFront();
-            $layer.setStyle(highlightStyle);
             $('#r-n').html('<h4> Route '+routename+'</h4>');
             $('#complaints').text(ratio(complaints));
             $('#boardings').text(numberChange(boardings));
@@ -236,13 +223,7 @@ function $onEachFeatureCap(feature, layer) {
             var complaints = feature.properties.comR;
             var boardings = feature.properties.boardings;
             var $capacity = feature.properties.capR;
-            var highlightStyle = {
-                opacity: 1,
-                weight: 5
-            };
 
-            $layer.bringToFront();
-            $layer.setStyle(highlightStyle);
             $('#r-n').html('<h4> Route '+routename+'</h4>');
             $('#complaints').text(ratio(complaints));
             $('#boardings').text(numberChange(boardings));
@@ -295,13 +276,7 @@ function $onEachFeatureClean(feature, layer) {
             var complaints = feature.properties.comR;
             var boardings = feature.properties.boardings;
             var $clean = feature.properties.cleR;
-            var highlightStyle = {
-                opacity: 1,
-                weight: 5
-            };
 
-            $layer.bringToFront();
-            $layer.setStyle(highlightStyle);
             $('#r-n').html('<h4> Route '+routename+'</h4>');
             $('#complaints').text(ratio(complaints));
             $('#boardings').text(numberChange(boardings));
@@ -354,13 +329,7 @@ function $onEachFeatureNS(feature, layer) {
             var complaints = feature.properties.comR;
             var boardings = feature.properties.boardings;
             var $noStop = feature.properties.nsR;
-            var highlightStyle = {
-                opacity: 1,
-                weight: 5
-            };
 
-            $layer.bringToFront();
-            $layer.setStyle(highlightStyle);
             $('#r-n').html('<h4> Route '+routename+'</h4>');
             $('#complaints').text(ratio(complaints));
             $('#boardings').text(numberChange(boardings));
@@ -413,13 +382,7 @@ function $onEachFeatureDC(feature, layer) {
             var complaints = feature.properties.comR;
             var boardings = feature.properties.boardings;
             var $DC = feature.properties.dcR;
-            var highlightStyle = {
-                opacity: 1,
-                weight: 5
-            };
 
-            $layer.bringToFront();
-            $layer.setStyle(highlightStyle);
             $('#r-n').html('<h4> Route '+routename+'</h4>');
             $('#complaints').text(ratio(complaints));
             $('#boardings').text(numberChange(boardings));
@@ -473,13 +436,7 @@ function $onEachFeatureFares(feature, layer) {
             var complaints = feature.properties.comR;
             var boardings = feature.properties.boardings;
             var $fares = feature.properties.farR;
-            var highlightStyle = {
-                opacity: 1,
-                weight: 5
-            };
 
-            $layer.bringToFront();
-            $layer.setStyle(highlightStyle);
             $('#r-n').html('<h4> Route '+routename+'</h4>');
             $('#complaints').text(ratio(complaints));
             $('#boardings').text(numberChange(boardings));
@@ -533,13 +490,7 @@ function $onEachFeatureMaint(feature, layer) {
             var complaints = feature.properties.comR;
             var boardings = feature.properties.boardings;
             var $maintenance = feature.properties.mainR;
-            var highlightStyle = {
-                opacity: 1,
-                weight: 5
-            };
 
-            $layer.bringToFront();
-            $layer.setStyle(highlightStyle);
             $('#r-n').html('<h4> Route '+routename+'</h4>');
             $('#complaints').text(ratio(complaints));
             $('#boardings').text(numberChange(boardings));
@@ -591,13 +542,7 @@ function $onEachFeaturePC(feature, layer) {
             var complaints = feature.properties.comR;
             var boardings = feature.properties.boardings;
             var $PC = feature.properties.pcR;
-            var highlightStyle = {
-                opacity: 1,
-                weight: 5
-            };
 
-            $layer.bringToFront();
-            $layer.setStyle(highlightStyle);
             $('#r-n').html('<h4> Route '+routename+'</h4>');
             $('#complaints').text(ratio(complaints));
             $('#boardings').text(numberChange(boardings));
@@ -649,13 +594,7 @@ function $onEachFeatureMisc(feature, layer) {
             var complaints = feature.properties.comR;
             var boardings = feature.properties.boardings;
             var $misc = feature.properties.miscR;
-            var highlightStyle = {
-                opacity: 1,
-                weight: 5
-            };
 
-            $layer.bringToFront();
-            $layer.setStyle(highlightStyle);
             $('#r-n').html('<h4> Route '+routename+'</h4>');
             $('#complaints').text(ratio(complaints));
             $('#boardings').text(numberChange(boardings));
@@ -709,13 +648,7 @@ function $onEachFeaturePraise(feature, layer) {
             var complaints = feature.properties.comR;
             var boardings = feature.properties.boardings;
             var $praise = feature.properties.praiR;
-            var highlightStyle = {
-                opacity: 1,
-                weight: 5
-            };
 
-            $layer.bringToFront();
-            $layer.setStyle(highlightStyle);
             $('#r-n').html('<h4> Route '+routename+'</h4>');
             $('#complaints').text(ratio(complaints));
             $('#boardings').text(numberChange(boardings));
@@ -769,13 +702,7 @@ function $onEachFeatureSchedule(feature, layer) {
             var complaints = feature.properties.comR;
             var boardings = feature.properties.boardings;
             var $schedule = feature.properties.schedR;
-            var highlightStyle = {
-                opacity: 1,
-                weight: 5
-            };
 
-            $layer.bringToFront();
-            $layer.setStyle(highlightStyle);
             $('#r-n').html('<h4>Route '+routename+'</h4>');
             $('#complaints').text(ratio(complaints));
             $('#boardings').text(numberChange(boardings));
@@ -803,6 +730,7 @@ function $onEachFeatureSafety(feature, layer) {
 
             $layer.bringToFront();
             $layer.setStyle(highlightStyle);
+
             $('#r-n').html('<h4>Route '+routename+'</h4>');
             $('#complaints').text(ratio(complaints));
             $('#boardings').text(numberChange(boardings));
@@ -830,13 +758,7 @@ function $onEachFeatureSafety(feature, layer) {
             var complaints = feature.properties.comR;
             var boardings = feature.properties.boardings;
             var $safety = feature.properties.safeR;
-            var highlightStyle = {
-                opacity: 1,
-                weight: 5
-            };
 
-            $layer.bringToFront();
-            $layer.setStyle(highlightStyle);
             $('#r-n').html('<h4>Route '+routename+'</h4>');
             $('#complaints').text(ratio(complaints));
             $('#boardings').text(numberChange(boardings));
@@ -1276,67 +1198,327 @@ function lineShadeCleanlieness(features, layer){
 var complaints = L.geoJson(busRoutes,{
         style: lineShadeComplaints,
         onEachFeature: $onEachFeature
-});
+}).on('click', function(e){
+
+        var highlightStyle = {
+                opacity: 1,
+                weight: 5
+            };
+        var defaultstyle = {
+                opacity: 0.8,
+                weight: 3
+            };
+
+        if (selected) {
+            e.target.setStyle(defaultstyle)
+        } 
+
+        selected = e.layer
+
+        selected.bringToFront()
+
+        selected.setStyle(highlightStyle)
+    });
 
 var busStopIssue = L.geoJson(busRoutes,{
         style: lineShadeBSI,
         onEachFeature: $onEachFeaturebsi
-});
+}).on('click', function(e){
+
+        var highlightStyle = {
+                opacity: 1,
+                weight: 5
+            };
+        var defaultstyle = {
+                opacity: 0.8,
+                weight: 3
+            };
+
+        if (selected) {
+            e.target.setStyle(defaultstyle)
+        } 
+
+        selected = e.layer
+
+        selected.bringToFront()
+
+        selected.setStyle(highlightStyle)
+    });
 
 var capacity = L.geoJson(busRoutes,{
         style: lineShadeCapacity,
         onEachFeature: $onEachFeatureCap
-});
+}).on('click', function(e){
+
+        var highlightStyle = {
+                opacity: 1,
+                weight: 5
+            };
+        var defaultstyle = {
+                opacity: 0.8,
+                weight: 3
+            };
+
+        if (selected) {
+            e.target.setStyle(defaultstyle)
+        } 
+
+        selected = e.layer
+
+        selected.bringToFront()
+
+        selected.setStyle(highlightStyle)
+    });
 
 var cleanlieness = L.geoJson(busRoutes,{
         style: lineShadeCleanlieness,
         onEachFeature: $onEachFeatureClean
-});
+}).on('click', function(e){
+
+        var highlightStyle = {
+                opacity: 1,
+                weight: 5
+            };
+        var defaultstyle = {
+                opacity: 0.8,
+                weight: 3
+            };
+
+        if (selected) {
+            e.target.setStyle(defaultstyle)
+        } 
+
+        selected = e.layer
+
+        selected.bringToFront()
+
+        selected.setStyle(highlightStyle)
+    });
 
 var noStop = L.geoJson(busRoutes,{
         style: lineShadeNoStop,
         onEachFeature: $onEachFeatureNS
-});
+}).on('click', function(e){
+
+        var highlightStyle = {
+                opacity: 1,
+                weight: 5
+            };
+        var defaultstyle = {
+                opacity: 0.8,
+                weight: 3
+            };
+
+        if (selected) {
+            e.target.setStyle(defaultstyle)
+        } 
+
+        selected = e.layer
+
+        selected.bringToFront()
+
+        selected.setStyle(highlightStyle)
+    });
 
 var driverConduct = L.geoJson(busRoutes,{
         style: lineShadeDC,
         onEachFeature: $onEachFeatureDC
-});
+}).on('click', function(e){
+
+        var highlightStyle = {
+                opacity: 1,
+                weight: 5
+            };
+        var defaultstyle = {
+                opacity: 0.8,
+                weight: 3
+            };
+
+        if (selected) {
+            e.target.setStyle(defaultstyle)
+        } 
+
+        selected = e.layer
+
+        selected.bringToFront()
+
+        selected.setStyle(highlightStyle)
+    });
 
 var fares = L.geoJson(busRoutes,{
         style: lineShadeFares,
         onEachFeature: $onEachFeatureFares
-});
+}).on('click', function(e){
+
+        var highlightStyle = {
+                opacity: 1,
+                weight: 5
+            };
+        var defaultstyle = {
+                opacity: 0.8,
+                weight: 3
+            };
+
+        if (selected) {
+            e.target.setStyle(defaultstyle)
+        } 
+
+        selected = e.layer
+
+        selected.bringToFront()
+
+        selected.setStyle(highlightStyle)
+    });
 
 var maintenance = L.geoJson(busRoutes,{
         style: lineShadeMaintenance,
         onEachFeature: $onEachFeatureMaint
-});
+}).on('click', function(e){
+
+        var highlightStyle = {
+                opacity: 1,
+                weight: 5
+            };
+        var defaultstyle = {
+                opacity: 0.8,
+                weight: 3
+            };
+
+        if (selected) {
+            e.target.setStyle(defaultstyle)
+        } 
+
+        selected = e.layer
+
+        selected.bringToFront()
+
+        selected.setStyle(highlightStyle)
+    });
 
 var misc = L.geoJson(busRoutes,{
         style: lineShadeMisc,
         onEachFeature: $onEachFeatureMisc
-});
+}).on('click', function(e){
+
+        var highlightStyle = {
+                opacity: 1,
+                weight: 5
+            };
+        var defaultstyle = {
+                opacity: 0.8,
+                weight: 3
+            };
+
+        if (selected) {
+            e.target.setStyle(defaultstyle)
+        } 
+
+        selected = e.layer
+
+        selected.bringToFront()
+
+        selected.setStyle(highlightStyle)
+    });
 
 var passenger = L.geoJson(busRoutes,{
         style: lineShadePassenger,
         onEachFeature: $onEachFeaturePC
-});
+}).on('click', function(e){
+
+        var highlightStyle = {
+                opacity: 1,
+                weight: 5
+            };
+        var defaultstyle = {
+                opacity: 0.8,
+                weight: 3
+            };
+
+        if (selected) {
+            e.target.setStyle(defaultstyle)
+        } 
+
+        selected = e.layer
+
+        selected.bringToFront()
+
+        selected.setStyle(highlightStyle)
+    });
 
 var praise = L.geoJson(busRoutes,{
         style: lineShadePraise,
         onEachFeature: $onEachFeaturePraise
-});
+}).on('click', function(e){
+
+        var highlightStyle = {
+                opacity: 1,
+                weight: 5
+            };
+        var defaultstyle = {
+                opacity: 0.8,
+                weight: 3
+            };
+
+        if (selected) {
+            e.target.setStyle(defaultstyle)
+        } 
+
+        selected = e.layer
+
+        selected.bringToFront()
+
+        selected.setStyle(highlightStyle)
+    });
 
 var safety = L.geoJson(busRoutes,{
         style: lineShadeSafety,
         onEachFeature: $onEachFeatureSafety
-});
+}).on('click', function(e){
+
+        var highlightStyle = {
+                opacity: 1,
+                weight: 5
+            };
+        var defaultstyle = {
+                opacity: 0.8,
+                weight: 3
+            };
+
+        if (selected) {
+            e.target.setStyle(defaultstyle)
+        } 
+
+        selected = e.layer
+
+        selected.bringToFront()
+
+        selected.setStyle(highlightStyle)
+    });
 
 var schedule = L.geoJson(busRoutes,{
         style: lineShadeSchedule,
         onEachFeature: $onEachFeatureSchedule
-});
+}).on('click', function(e){
+
+        var highlightStyle = {
+                opacity: 1,
+                weight: 5
+            };
+        var defaultstyle = {
+                opacity: 0.8,
+                weight: 3
+            };
+
+        if (selected) {
+            e.target.setStyle(defaultstyle)
+        } 
+
+        selected = e.layer
+
+        selected.bringToFront()
+
+        selected.setStyle(highlightStyle)
+    });
 
 //Build Legend
 function buildLegend(category){
@@ -1442,12 +1624,35 @@ function defaultBusRouteColor(feature, layer) {
   };
 }
 
+var selected;
 var busFeature = L.geoJson(busRoutes, {
-  style: defaultBusRouteColor,
-  onEachFeature : $onEachFeature
-});
+        style: defaultBusRouteColor,
+        onEachFeature : $onEachFeature
+    }).on('click', function(e){
+
+        var highlightStyle = {
+                opacity: 1,
+                weight: 5
+            };
+        var defaultstyle = {
+                opacity: 0.8,
+                weight: 3
+            };
+
+        if (selected) {
+            e.target.setStyle(defaultstyle)
+        } 
+
+        selected = e.layer
+
+        selected.bringToFront()
+
+        selected.setStyle(highlightStyle)
+    });
 
 busFeature.addTo(map);
+
+
 
 ///////////////////
 //Button controls//
@@ -1462,25 +1667,25 @@ $(document).ready(function(){
 $('#1').click(function(){
   var category = $(this).html();
   $('.complaint-type').html('<b>'+category+'</b> complaints per 100,000 rides in');
-  //$('#legend').css('display', 'block');
+
   clearLayer();
   busStopIssue.addTo(map);
-
 });
 
 //capacity
 $('#2').click(function(){
   var category = $(this).html();
   $('.complaint-type').html('<b>'+category+'</b> complaints per 100,000 rides in');
-  //$('#legend').css('display', 'block');
+
   clearLayer();
   capacity.addTo(map);
 });
+
 //cleanlieness
 $('#3').click(function(){
   var category = $(this).html();
   $('.complaint-type').html('<b>'+category+'</b> complaints per 100,000 rides in');
-  //$('#legend').css('display', 'block');
+
   clearLayer();
   cleanlieness.addTo(map);
 });
@@ -1489,7 +1694,7 @@ $('#3').click(function(){
 $('#4').click(function(){
   var category = $(this).html();
   $('.complaint-type').html('<b>'+category+'</b> complaints per 100,000 rides in');
-  //$('#legend').css('display', 'block');
+
   clearLayer();
   noStop.addTo(map);
 });
@@ -1498,7 +1703,7 @@ $('#4').click(function(){
 $('#5').click(function(){
   var category = $(this).html();
   $('.complaint-type').html('<b>'+category+'</b> complaints per 100,000 rides in');
-  //$('#legend').css('display', 'block');
+
   clearLayer();
   driverConduct.addTo(map);
 });
@@ -1507,7 +1712,7 @@ $('#5').click(function(){
 $('#6').click(function(){
   var category = $(this).html();
   $('.complaint-type').html(' <b>'+category+'</b> complaints per 100,000 rides in');
-  //$('#legend').css('display', 'block');
+
   clearLayer();
   fares.addTo(map);
 });
@@ -1516,7 +1721,7 @@ $('#6').click(function(){
 $('#7').click(function(){
   var category = $(this).html();
   $('.complaint-type').html('<b>'+category+'</b> complaints per 100,000 rides in');
-  //$('#legend').css('display', 'block');
+
   clearLayer();
   maintenance.addTo(map);
 });
@@ -1525,7 +1730,7 @@ $('#7').click(function(){
 $('#8').click(function(){
   var category = $(this).html();
   $('.complaint-type').html('<b>'+category+'</b> complaints per 100,000 rides in');
-  //$('#legend').css('display', 'block');
+
   clearLayer();
   passenger.addTo(map);
 });
@@ -1534,7 +1739,7 @@ $('#8').click(function(){
 $('#9').click(function(){
   var category = $(this).html();
   $('.complaint-type').html('<b>'+category+'</b> complaints per 100,000 rides in');
-  //$('#legend').css('display', 'block');
+
   clearLayer();
   misc.addTo(map);
 });
@@ -1543,7 +1748,7 @@ $('#9').click(function(){
 $('#10').click(function(){
   var category = $(this).html();
   $('.complaint-type').html('Rate of <b>'+category+'</b> comments per 100,000 rides in');
-  //$('#legend').css('display', 'block');
+
   clearLayer();
   praise.addTo(map);
 });
@@ -1552,7 +1757,7 @@ $('#10').click(function(){
 $('#11').click(function(){
   var category = $(this).html();
   $('.complaint-type').html('<b>'+category+'</b> complaints per 100,000 rides in');
-  //$('#legend').css('display', 'block');
+
   clearLayer();
   schedule.addTo(map);
 });
@@ -1561,7 +1766,7 @@ $('#11').click(function(){
 $('#12').click(function(){
   var category = $(this).html();
   $('.complaint-type').html('<b>'+category+'</b> complaints per 100,000 rides in');
-  //$('#legend').css('display', 'block');
+  
   clearLayer();
   safety.addTo(map);
 });
@@ -1578,14 +1783,7 @@ $('#map-container').mouseleave(function(){
   $('#hover-box').hide();
 });
 
-
-//.___  ___.   ______   .______    __   __       _______ //
-//|   \/   |  /  __  \  |   _  \  |  | |  |     |   ____|//
-//|  \  /  | |  |  |  | |  |_)  | |  | |  |     |  |__   //
-//|  |\/|  | |  |  |  | |   _  <  |  | |  |     |   __|  //
-//|  |  |  | |  `--'  | |  |_)  | |  | |  `----.|  |____ //
-//|__|  |__|  \______/  |______/  |__| |_______||_______|//
-
+//Slide Menu
 function selector(){
     $('button').click(function(){
         var section = $(this).html();
@@ -1596,9 +1794,7 @@ function selector(){
 function slide(){   
     $('.selector, #buttons').click(function(){
         $('#buttons').slideToggle('fast');
-        //$('.selector').show();
     });
-
 }
 
 $('#ex').click(function(){
