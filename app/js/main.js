@@ -1,9 +1,5 @@
 'use strict';
-//HOVER BOX THings
-
-/*hover box notes
-r-n: route name
-*/
+//HOVER BOX things
 
 function getPos(event) {
     var w = $('#map-container').width()/4;
@@ -43,7 +39,6 @@ function getClick(event){
     });
 }
 
-
 function initHover() {
     var m = 768;
     var doc = $(window).width();
@@ -62,7 +57,7 @@ function endHover() {
     $(document).unbind('mousemove', getPos);
 }
 
-//number format
+//number formatting
 function numberChange(number) {
     if (number === 'No data') {
         return 'No data';
@@ -98,7 +93,6 @@ function $onEachFeature(feature, layer) {
             $('#r-n').html('<h4> Route '+routename+'</h4>');
             $('#complaints').html('<b>'+ratio(complaints)+'</b>');
             $('#boardings').text(numberChange(boardings));
-            //add extra things, stroke change?? 
             $('#sentence').html('');            
             initHover();    
         
@@ -124,14 +118,13 @@ function $onEachFeature(feature, layer) {
             $('#r-n').html('<h4> Route '+routename+'</h4>');
             $('#complaints').html('<b>'+ratio(complaints)+'</b>');
             $('#boardings').text(numberChange(boardings));
-            //add extra things, stroke change?? 
             $('#sentence').html('');            
             initHover();
         }
     }); 
 }
 
-//filling by categories
+//style by categories
 
 function $onEachFeaturebsi(feature, layer) {
     layer.on({
@@ -176,7 +169,7 @@ function $onEachFeaturebsi(feature, layer) {
             $('#r-n').html('<h4> Route '+routename+'</h4>');
             $('#complaints').text(ratio(complaints));
             $('#boardings').text(numberChange(boardings));
-            //add extra things, stroke change??
+
             $('#sentence').html('<p>This route had <b>' + ratio($bsi) + '</b> bus stop issue complaints per 100,000 rides in 2015.</p>');            
             initHover();           
         }
@@ -202,7 +195,6 @@ function $onEachFeatureCap(feature, layer) {
             $('#complaints').text(ratio(complaints));
             $('#boardings').text(numberChange(boardings));
 
-            //add extra things, stroke change??
             $('#sentence').html('<p>This route had <b>' + ratio($capacity) + '</b> capacity complaints per 100,000 rides in 2015.</p>');            
             initHover();           
         }
@@ -228,7 +220,6 @@ function $onEachFeatureCap(feature, layer) {
             $('#complaints').text(ratio(complaints));
             $('#boardings').text(numberChange(boardings));
 
-            //add extra things, stroke change??
             $('#sentence').html('<p>This route had <b>' + ratio($capacity) + '</b> capacity complaints per 100,000 rides in 2015.</p>');            
             initHover();           
         }
@@ -253,8 +244,6 @@ function $onEachFeatureClean(feature, layer) {
             $('#r-n').html('<h4> Route '+routename+'</h4>');
             $('#complaints').text(ratio(complaints));
             $('#boardings').text(numberChange(boardings));
-
-            //add extra things, stroke change??
             
             $('#sentence').html('<p>This route had <b>' + ratio($clean) + '</b> cleanliness complaints per 100,000 rides in 2015.</p>'); 
             initHover();
@@ -280,8 +269,6 @@ function $onEachFeatureClean(feature, layer) {
             $('#r-n').html('<h4> Route '+routename+'</h4>');
             $('#complaints').text(ratio(complaints));
             $('#boardings').text(numberChange(boardings));
-
-            //add extra things, stroke change??
             
             $('#sentence').html('<p>This route had <b>' + ratio($clean) + '</b> cleanliness complaints per 100,000 rides in 2015.</p>'); 
             initHover();
@@ -308,7 +295,6 @@ function $onEachFeatureNS(feature, layer) {
             $('#complaints').text(ratio(complaints));
             $('#boardings').text(numberChange(boardings));
 
-            //add extra things, stroke change??
             $('#sentence').html('<p>This route had <b>' + ratio($noStop) + '</b> missed stop complaints per 100,000 rides in 2015.</p>');             
             initHover();           
         }
@@ -334,7 +320,6 @@ function $onEachFeatureNS(feature, layer) {
             $('#complaints').text(ratio(complaints));
             $('#boardings').text(numberChange(boardings));
 
-            //add extra things, stroke change??
             $('#sentence').html('<p>This route had <b>' + ratio($noStop) + '</b> missed stop complaints per 100,000 rides in 2015.</p>');             
             initHover();           
         }
@@ -360,8 +345,6 @@ function $onEachFeatureDC(feature, layer) {
             $('#complaints').text(ratio(complaints));
             $('#boardings').text(numberChange(boardings));
 
-            //add extra things, stroke change??
-
             $('#sentence').html('<p>This route had <b>' + ratio($DC) + '</b> complaints about driver conduct per 100,000 rides in 2015.</p>');            
             initHover();           
         }
@@ -387,8 +370,6 @@ function $onEachFeatureDC(feature, layer) {
             $('#complaints').text(ratio(complaints));
             $('#boardings').text(numberChange(boardings));
 
-            //add extra things, stroke change??
-
             $('#sentence').html('<p>This route had <b>' + ratio($DC) + '</b> complaints about driver conduct per 100,000 rides in 2015.</p>');            
             initHover();           
         }
@@ -413,8 +394,6 @@ function $onEachFeatureFares(feature, layer) {
             $('#r-n').html('<h4> Route '+routename+'</h4>');
             $('#complaints').text(ratio(complaints));
             $('#boardings').text(numberChange(boardings));
-
-            //add extra things, stroke change??
             
             $('#sentence').html('<p>This route had <b>' + ratio($fares) + '</b> ride fare complaints per 100,000 rides in 2015.</p>');            
             initHover();           
@@ -441,8 +420,6 @@ function $onEachFeatureFares(feature, layer) {
             $('#complaints').text(ratio(complaints));
             $('#boardings').text(numberChange(boardings));
 
-            //add extra things, stroke change??
-            
             $('#sentence').html('<p>This route had <b>' + ratio($fares) + '</b> ride fare complaints per 100,000 rides in 2015.</p>');            
             initHover();           
         }
@@ -468,8 +445,6 @@ function $onEachFeatureMaint(feature, layer) {
             $('#complaints').text(ratio(complaints));
             $('#boardings').text(numberChange(boardings));
 
-            //add extra things, stroke change??
-            
             $('#sentence').html('<p>This route had <b>' + ratio($maintenance) + '</b> bus maintenance complaints per 100,000 rides in 2015.</p>');             
             initHover();           
         }
@@ -495,8 +470,6 @@ function $onEachFeatureMaint(feature, layer) {
             $('#complaints').text(ratio(complaints));
             $('#boardings').text(numberChange(boardings));
 
-            //add extra things, stroke change??
-            
             $('#sentence').html('<p>This route had <b>' + ratio($maintenance) + '</b> bus maintenance complaints per 100,000 rides in 2015.</p>');             
             initHover();           
         }
@@ -521,7 +494,7 @@ function $onEachFeaturePC(feature, layer) {
             $('#r-n').html('<h4> Route '+routename+'</h4>');
             $('#complaints').text(ratio(complaints));
             $('#boardings').text(numberChange(boardings));
-            //add extra things, stroke change??
+
             $('#sentence').html('<p>This route had <b>' + ratio($PC) + '</b> passenger conduct complaints per 100,000 rides in 2015.</p>');  
             initHover();           
         }
@@ -546,7 +519,7 @@ function $onEachFeaturePC(feature, layer) {
             $('#r-n').html('<h4> Route '+routename+'</h4>');
             $('#complaints').text(ratio(complaints));
             $('#boardings').text(numberChange(boardings));
-            //add extra things, stroke change??
+
             $('#sentence').html('<p>This route had <b>' + ratio($PC) + '</b> passenger conduct complaints per 100,000 rides in 2015.</p>');  
             initHover();           
         }
@@ -572,8 +545,6 @@ function $onEachFeatureMisc(feature, layer) {
             $('#complaints').text(ratio(complaints));
             $('#boardings').text(numberChange(boardings));
 
-            //add extra things, stroke change??
-
             $('#sentence').html('<p>This route had <b>' + ratio($misc) + '</b> miscellaneous complaints per 100,000 rides in 2015.</p>');             
             initHover();           
         }
@@ -598,8 +569,6 @@ function $onEachFeatureMisc(feature, layer) {
             $('#r-n').html('<h4> Route '+routename+'</h4>');
             $('#complaints').text(ratio(complaints));
             $('#boardings').text(numberChange(boardings));
-
-            //add extra things, stroke change??
 
             $('#sentence').html('<p>This route had <b>' + ratio($misc) + '</b> miscellaneous complaints per 100,000 rides in 2015.</p>');             
             initHover();           
@@ -626,8 +595,6 @@ function $onEachFeaturePraise(feature, layer) {
             $('#complaints').text(ratio(complaints));
             $('#boardings').text(numberChange(boardings));
 
-            //add extra things, stroke change??
-            
             $('#sentence').html('<p>This route had <b>' + ratio($praise) + '</b> positive comments per 100,000 rides in 2015.</p>');             
             initHover();           
         }
@@ -653,8 +620,6 @@ function $onEachFeaturePraise(feature, layer) {
             $('#complaints').text(ratio(complaints));
             $('#boardings').text(numberChange(boardings));
 
-            //add extra things, stroke change??
-            
             $('#sentence').html('<p>This route had <b>' + ratio($praise) + '</b> positive comments per 100,000 rides in 2015.</p>');             
             initHover();           
         }
@@ -680,8 +645,6 @@ function $onEachFeatureSchedule(feature, layer) {
             $('#complaints').text(ratio(complaints));
             $('#boardings').text(numberChange(boardings));
 
-            //add extra things, stroke change??
-            
             $('#sentence').html('<p>This route had <b>' + ratio($schedule) + '</b> scheduling  complaints per 100,000 rides in 2015.</p>');              
             initHover();           
         }
@@ -707,8 +670,6 @@ function $onEachFeatureSchedule(feature, layer) {
             $('#complaints').text(ratio(complaints));
             $('#boardings').text(numberChange(boardings));
 
-            //add extra things, stroke change??
-            
             $('#sentence').html('<p>This route had <b>' + ratio($schedule) + '</b> scheduling  complaints per 100,000 rides in 2015.</p>');              
             initHover();           
         }
@@ -735,8 +696,6 @@ function $onEachFeatureSafety(feature, layer) {
             $('#complaints').text(ratio(complaints));
             $('#boardings').text(numberChange(boardings));
 
-            //add extra things, stroke change??
-
             $('#sentence').html('<p>This route had <b>' + ratio($safety) + '</b> safety complaints per 100,000 rides in 2015.</p>');              
             initHover();           
         }
@@ -763,21 +722,15 @@ function $onEachFeatureSafety(feature, layer) {
             $('#complaints').text(ratio(complaints));
             $('#boardings').text(numberChange(boardings));
 
-            //add extra things, stroke change??
-
             $('#sentence').html('<p>This route had <b>' + ratio($safety) + '</b> safety complaints per 100,000 rides in 2015.</p>');              
             initHover();           
         }
     }); 
 }
 
-//======================//
-//Category Layer Builder//
-//======================//
+//CATEGORY LAYERS
 
-//FIRST the SHADER FUNCTION
-
-
+//FIRST the SHADER FUNCTION (based on rates)
 function getColor(d) {
 
     var e = 8.421436326;
@@ -1084,15 +1037,7 @@ function getColorSafety(d) {
     }
 }
 
-//Template
-/*function lineShadeComplaints(features, layer){
-    return{
-        color: getColor(features.properties.complaints),
-    };
-}*/
-
-//STYLE
-
+//STYLE FUNCTION
 function lineShadeComplaints(features, layer){
     return{
         color: getColor(features.properties.complaints),
@@ -1195,11 +1140,11 @@ function lineShadeCleanlieness(features, layer){
     };
 }
 
+//map feature category + click for mobile
 var complaints = L.geoJson(busRoutes,{
         style: lineShadeComplaints,
         onEachFeature: $onEachFeature
-}).on('click', function(e){
-
+    }).on('click', function(e){
         var highlightStyle = {
                 opacity: 1,
                 weight: 5
@@ -1214,16 +1159,14 @@ var complaints = L.geoJson(busRoutes,{
         } 
 
         selected = e.layer
-
         selected.bringToFront()
-
         selected.setStyle(highlightStyle)
     });
 
 var busStopIssue = L.geoJson(busRoutes,{
         style: lineShadeBSI,
         onEachFeature: $onEachFeaturebsi
-}).on('click', function(e){
+    }).on('click', function(e){
 
         var highlightStyle = {
                 opacity: 1,
@@ -1239,16 +1182,14 @@ var busStopIssue = L.geoJson(busRoutes,{
         } 
 
         selected = e.layer
-
         selected.bringToFront()
-
         selected.setStyle(highlightStyle)
     });
 
 var capacity = L.geoJson(busRoutes,{
         style: lineShadeCapacity,
         onEachFeature: $onEachFeatureCap
-}).on('click', function(e){
+    }).on('click', function(e){
 
         var highlightStyle = {
                 opacity: 1,
@@ -1264,17 +1205,14 @@ var capacity = L.geoJson(busRoutes,{
         } 
 
         selected = e.layer
-
         selected.bringToFront()
-
         selected.setStyle(highlightStyle)
     });
 
 var cleanlieness = L.geoJson(busRoutes,{
         style: lineShadeCleanlieness,
         onEachFeature: $onEachFeatureClean
-}).on('click', function(e){
-
+    }).on('click', function(e){
         var highlightStyle = {
                 opacity: 1,
                 weight: 5
@@ -1289,17 +1227,14 @@ var cleanlieness = L.geoJson(busRoutes,{
         } 
 
         selected = e.layer
-
         selected.bringToFront()
-
         selected.setStyle(highlightStyle)
     });
 
 var noStop = L.geoJson(busRoutes,{
         style: lineShadeNoStop,
         onEachFeature: $onEachFeatureNS
-}).on('click', function(e){
-
+    }).on('click', function(e){
         var highlightStyle = {
                 opacity: 1,
                 weight: 5
@@ -1314,17 +1249,14 @@ var noStop = L.geoJson(busRoutes,{
         } 
 
         selected = e.layer
-
         selected.bringToFront()
-
         selected.setStyle(highlightStyle)
     });
 
 var driverConduct = L.geoJson(busRoutes,{
         style: lineShadeDC,
         onEachFeature: $onEachFeatureDC
-}).on('click', function(e){
-
+    }).on('click', function(e){
         var highlightStyle = {
                 opacity: 1,
                 weight: 5
@@ -1339,17 +1271,14 @@ var driverConduct = L.geoJson(busRoutes,{
         } 
 
         selected = e.layer
-
         selected.bringToFront()
-
         selected.setStyle(highlightStyle)
     });
 
 var fares = L.geoJson(busRoutes,{
         style: lineShadeFares,
         onEachFeature: $onEachFeatureFares
-}).on('click', function(e){
-
+    }).on('click', function(e){
         var highlightStyle = {
                 opacity: 1,
                 weight: 5
@@ -1364,17 +1293,14 @@ var fares = L.geoJson(busRoutes,{
         } 
 
         selected = e.layer
-
         selected.bringToFront()
-
         selected.setStyle(highlightStyle)
     });
 
 var maintenance = L.geoJson(busRoutes,{
         style: lineShadeMaintenance,
         onEachFeature: $onEachFeatureMaint
-}).on('click', function(e){
-
+    }).on('click', function(e){
         var highlightStyle = {
                 opacity: 1,
                 weight: 5
@@ -1389,17 +1315,14 @@ var maintenance = L.geoJson(busRoutes,{
         } 
 
         selected = e.layer
-
         selected.bringToFront()
-
         selected.setStyle(highlightStyle)
     });
 
 var misc = L.geoJson(busRoutes,{
         style: lineShadeMisc,
         onEachFeature: $onEachFeatureMisc
-}).on('click', function(e){
-
+    }).on('click', function(e){
         var highlightStyle = {
                 opacity: 1,
                 weight: 5
@@ -1414,17 +1337,14 @@ var misc = L.geoJson(busRoutes,{
         } 
 
         selected = e.layer
-
         selected.bringToFront()
-
         selected.setStyle(highlightStyle)
     });
 
 var passenger = L.geoJson(busRoutes,{
         style: lineShadePassenger,
         onEachFeature: $onEachFeaturePC
-}).on('click', function(e){
-
+    }).on('click', function(e){
         var highlightStyle = {
                 opacity: 1,
                 weight: 5
@@ -1439,17 +1359,14 @@ var passenger = L.geoJson(busRoutes,{
         } 
 
         selected = e.layer
-
         selected.bringToFront()
-
         selected.setStyle(highlightStyle)
     });
 
 var praise = L.geoJson(busRoutes,{
         style: lineShadePraise,
         onEachFeature: $onEachFeaturePraise
-}).on('click', function(e){
-
+    }).on('click', function(e){
         var highlightStyle = {
                 opacity: 1,
                 weight: 5
@@ -1464,17 +1381,14 @@ var praise = L.geoJson(busRoutes,{
         } 
 
         selected = e.layer
-
         selected.bringToFront()
-
         selected.setStyle(highlightStyle)
     });
 
 var safety = L.geoJson(busRoutes,{
         style: lineShadeSafety,
         onEachFeature: $onEachFeatureSafety
-}).on('click', function(e){
-
+    }).on('click', function(e){
         var highlightStyle = {
                 opacity: 1,
                 weight: 5
@@ -1489,17 +1403,14 @@ var safety = L.geoJson(busRoutes,{
         } 
 
         selected = e.layer
-
         selected.bringToFront()
-
         selected.setStyle(highlightStyle)
     });
 
 var schedule = L.geoJson(busRoutes,{
         style: lineShadeSchedule,
         onEachFeature: $onEachFeatureSchedule
-}).on('click', function(e){
-
+    }).on('click', function(e){
         var highlightStyle = {
                 opacity: 1,
                 weight: 5
@@ -1514,9 +1425,7 @@ var schedule = L.geoJson(busRoutes,{
         } 
 
         selected = e.layer
-
         selected.bringToFront()
-
         selected.setStyle(highlightStyle)
     });
 
@@ -1535,33 +1444,25 @@ function buildLegend(category){
     }
 }
 
-/////////////////////////////////////////////////
-///MAP MAP MAP MAP MAP MAP MAP MAP MAP MAP MAP///
-////////////////////////////////////////////////
-
-//MAKE TILE LAYER FOR ZOOMED IN VIEW///
+//MAP
 
 var tiles = new L.StamenTileLayer('toner-lite');
-
-// MOBILE WIDTHS
 var mobile = 843;
 var w = window.innerWidth;
 
-// FUNCTIONS TO FIX MAP POSITION 25.721 , -80],  10)
-// AND ZOOM ON PAGE LOAD
 function fixPosition() {
     if (w >= mobile) {
-        return [25.77, -80.22];
+        return [25.76675, -80.2356];
     } else {
-        return [25.77, -80.28];
+        return [25.7, -80.28];
     }
 }
 
 function fixZoom() {
     if (w > mobile) {
-        return 9;
-    } else {
         return 10;
+    } else {
+        return 9.5;
     }
 }
 
@@ -1593,9 +1494,12 @@ var map = new L.Map('map-container', {
 var control = L.control.zoom({
     'position': 'topleft'
 });
+//basiv map and area
 control.addTo(map);
 
-//clear
+//ADDING Features to map categories
+
+//clearing map
 function clearLayer() {
     map.removeLayer(complaints);
     map.removeLayer(busStopIssue);
@@ -1611,12 +1515,9 @@ function clearLayer() {
     map.removeLayer(schedule);
     map.removeLayer(safety);
     map.removeLayer(busFeature);
-    //alert('Clear Layers!');
 }
 
-//Building the Page
-//what readers see first
-//Bus Routes
+//what bus routes readers see first
 function defaultBusRouteColor(feature, layer) {
   return{ 
     color: getColor(feature.properties.comR),
@@ -1650,20 +1551,18 @@ var busFeature = L.geoJson(busRoutes, {
         selected.setStyle(highlightStyle)
     });
 
+//initial map is built
 busFeature.addTo(map);
 
-
-
-///////////////////
-//Button controls//
-///////////////////
-
+//Adding legend
 $(document).ready(function(){
   var q = 'quintile';
   buildLegend(q);
 });
 
-//bus stop issue
+//CATEGORY SWITCHER
+
+//bus stop issues
 $('#1').click(function(){
   var category = $(this).html();
   $('.complaint-type').html('<b>'+category+'</b> complaints per 100,000 rides in');
@@ -1797,6 +1696,7 @@ function slide(){
     });
 }
 
+//for mobile
 $('#ex').click(function(){
     $('#hover-box').hide();
 });
