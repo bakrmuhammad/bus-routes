@@ -1,3 +1,12 @@
+@font-face {
+  font-family: 'McClatchy Sans';
+  src:  url('mcsnReg.OTF');
+}
+@font-face {
+  font-family: 'McClatchy Slab';
+  src:  url('mcssReg.OTF');
+}
+
 .font-xxl {
   font-size: 36px; }
 
@@ -379,14 +388,15 @@ display: none;}
   opacity: .91;
 }
 
-#cards {
-  display: none;
-}
-
 .bars{
   height:660px;
   overflow: scroll;
 }
+.description{
+  font-size: 12px;
+  margin: 5px 0;
+  width: auto;
+  }
 
 .bar-container {
   overflow: hidden;
@@ -395,18 +405,20 @@ display: none;}
   margin-bottom: 0em;
   width: 95%;
   padding: 0.5em 0;
+  display: inline-block;
 }
 
 .bar-inner {
-  display: block;
-  background-color: #0066b3;
+  background-color: #bd0026;
   height: 10px;
-  margin-bottom: 0.5em;
+  display: inline-block;
 }
 
 label {
-  vertical-align: 4px;
+  vertical-align: 1px;
   font-size: 4px;
+  display: inline-block;
+  z-index: 1
 }
 
 .bar-name {
