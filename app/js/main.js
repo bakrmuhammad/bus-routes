@@ -1563,8 +1563,8 @@ $(document).ready(function(){
 //CATEGORY SWITCHER
 
 //bus stop issues
-$('#1').click(function(){
-  var category = $(this).html();
+$('.1, .F').click(function(){
+  var category = $('.1').html();
   $('.complaint-type').html('<b>'+category+'</b> complaints per 100,000 rides in');
 
   clearLayer();
@@ -1572,8 +1572,8 @@ $('#1').click(function(){
 });
 
 //capacity
-$('#2').click(function(){
-  var category = $(this).html();
+$('.2, .I').click(function(){
+  var category = $('.2').html();
   $('.complaint-type').html('<b>'+category+'</b> complaints per 100,000 rides in');
 
   clearLayer();
@@ -1581,8 +1581,8 @@ $('#2').click(function(){
 });
 
 //cleanlieness
-$('#3').click(function(){
-  var category = $(this).html();
+$('.3, .H').click(function(){
+  var category = $('.3').html();
   $('.complaint-type').html('<b>'+category+'</b> complaints per 100,000 rides in');
 
   clearLayer();
@@ -1590,8 +1590,8 @@ $('#3').click(function(){
 });
 
 //no stop
-$('#4').click(function(){
-  var category = $(this).html();
+$('.4, .C').click(function(){
+  var category = $('.4').html();
   $('.complaint-type').html('<b>'+category+'</b> complaints per 100,000 rides in');
 
   clearLayer();
@@ -1599,8 +1599,8 @@ $('#4').click(function(){
 });
 
 //driver conduct
-$('#5').click(function(){
-  var category = $(this).html();
+$('.5, .B').click(function(){
+  var category = $('.5').html();
   $('.complaint-type').html('<b>'+category+'</b> complaints per 100,000 rides in');
 
   clearLayer();
@@ -1608,8 +1608,8 @@ $('#5').click(function(){
 });
 
 //fares
-$('#6').click(function(){
-  var category = $(this).html();
+$('.6, .K').click(function(){
+  var category = $('.6').html();
   $('.complaint-type').html(' <b>'+category+'</b> complaints per 100,000 rides in');
 
   clearLayer();
@@ -1617,8 +1617,8 @@ $('#6').click(function(){
 });
 
 //maintenance
-$('#7').click(function(){
-  var category = $(this).html();
+$('.7, .J').click(function(){
+  var category = $('.7').html();
   $('.complaint-type').html('<b>'+category+'</b> complaints per 100,000 rides in');
 
   clearLayer();
@@ -1626,8 +1626,8 @@ $('#7').click(function(){
 });
 
 //passenger conduct
-$('#8').click(function(){
-  var category = $(this).html();
+$('.8, .L').click(function(){
+  var category = $('.8').html();
   $('.complaint-type').html('<b>'+category+'</b> complaints per 100,000 rides in');
 
   clearLayer();
@@ -1635,8 +1635,8 @@ $('#8').click(function(){
 });
 
 //misc
-$('#9').click(function(){
-  var category = $(this).html();
+$('.9, .E').click(function(){
+  var category = $('.9').html();
   $('.complaint-type').html('<b>'+category+'</b> complaints per 100,000 rides in');
 
   clearLayer();
@@ -1644,8 +1644,8 @@ $('#9').click(function(){
 });
 
 //praise
-$('#10').click(function(){
-  var category = $(this).html();
+$('.10, .G').click(function(){
+  var category = $('.10').html();
   $('.complaint-type').html('Rate of <b>'+category+'</b> comments per 100,000 rides in');
 
   clearLayer();
@@ -1653,8 +1653,8 @@ $('#10').click(function(){
 });
 
 //schedule
-$('#11').click(function(){
-  var category = $(this).html();
+$('.11, .A').click(function(){
+  var category = $('.11').html();
   $('.complaint-type').html('<b>'+category+'</b> complaints per 100,000 rides in');
 
   clearLayer();
@@ -1662,8 +1662,8 @@ $('#11').click(function(){
 });
 
 //Safety
-$('#12').click(function(){
-  var category = $(this).html();
+$('.12, .D').click(function(){
+  var category = $('.12').html();
   $('.complaint-type').html('<b>'+category+'</b> complaints per 100,000 rides in');
   
   clearLayer();
@@ -1687,6 +1687,19 @@ function selector(){
     $('button').click(function(){
         var section = $(this).html();
         $('.selector').html(section);
+    });
+
+    $('.bar-container').click(function(){
+        var active;
+        if (active) {
+            $(this).removeClass('active');
+        } 
+
+        selected = e.layer
+
+        selected.bringToFront()
+
+        selected.setStyle(highlightStyle)
     });
 }
 
